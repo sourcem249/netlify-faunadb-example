@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Jua Local";
+  src: local("Jua");
+  font-display: swap;
+}
+
+:root {
+  --ink: #2b2118;
+  --moss: #214833;
+  --leaf: #3e7a45;
+  --cream: #fff8ea;
+  --parchment: #f4ead4;
+  --honey: #e8b15a;
+  --berry: #a84b3c;
+  --sky: #8ecae6;
+  --bs-body-color: var(--ink);
+  --bs-body-font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --bs-border-radius: 0;
+  --bs-primary: var(--leaf);
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  color: var(--ink);
+  background-color: #6ea85a;
+  background-image:
+    radial-gradient(circle at 18% 12%, #fff3bf 0 42px, transparent 44px),
+    linear-gradient(#9fd4ea 0 38%, #b7d98a 38% 56%, #6ea85a 56% 78%, #d7b56a 78% 100%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, .navbar-brand, .btn, .hero-kicker {
+  font-family: "Jua", "Jua Local", "Noto Sans KR", sans-serif;
+  letter-spacing: 0;
+}
+
+.valley-nav {
+  background: var(--moss);
+  border-bottom: 4px solid var(--ink);
+  box-shadow: 0 4px 0 rgba(43, 33, 24, 0.25);
+}
+
+.valley-nav .nav-link {
+  color: #f4ead4;
+  font-family: "Jua", sans-serif;
+  font-size: 1.15rem;
+}
+
+.valley-nav .nav-link.active,
+.valley-nav .nav-link:hover {
+  color: var(--honey);
+}
+
+.valley-who {
+  color: var(--cream);
+  font-family: "Jua", sans-serif;
+}
+
+.valley-hero {
+  color: var(--ink);
+}
+
+.hero-kicker {
+  color: var(--moss);
+  font-size: 1.2rem;
+}
+
+.valley-hero .lead {
+  max-width: 38rem;
+}
+
+.valley-hero-art {
+  width: 100%;
+  border: 18px solid transparent;
+  border-image: url("/ui/panel.png") 14 fill stretch;
+  image-rendering: pixelated;
+  background: #fff8ea;
+}
+
+.album-band {
+  background: rgba(244, 234, 212, 0.86);
+  border-top: 4px solid var(--ink);
+  border-bottom: 4px solid var(--ink);
+}
+
+.valley-panel {
+  background: transparent;
+  border: 18px solid transparent;
+  border-image: url("/ui/panel.png") 14 fill stretch;
+  padding: 1rem 1.05rem 1.15rem;
+  color: var(--ink);
+}
+
+.valley-footer {
+  color: #f7f1e3;
+  background: var(--moss);
+  border-top: 4px solid var(--ink);
+}
+
+.valley-footer .text-secondary {
+  color: #d5c7a4 !important;
+}
+
+.btn {
+  border-width: 3px;
+  border-radius: 0;
+  box-shadow: 3px 3px 0 var(--ink);
+  font-size: 1.05rem;
+}
+
+.btn:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.btn:disabled {
+  transform: none;
+}
+
+.btn-leaf {
+  --bs-btn-color: #fff8ea;
+  --bs-btn-bg: #3e7a45;
+  --bs-btn-border-color: #1d3b22;
+  --bs-btn-hover-color: #fff8ea;
+  --bs-btn-hover-bg: #32663a;
+  --bs-btn-hover-border-color: #1d3b22;
+  --bs-btn-active-bg: #28562f;
+  --bs-btn-active-border-color: #1d3b22;
+}
+
+.btn-honey {
+  --bs-btn-color: #2b2118;
+  --bs-btn-bg: #e8b15a;
+  --bs-btn-border-color: #6b4423;
+  --bs-btn-hover-color: #2b2118;
+  --bs-btn-hover-bg: #f0c57a;
+  --bs-btn-hover-border-color: #6b4423;
+}
+
+.btn-berry {
+  --bs-btn-color: #fff8ea;
+  --bs-btn-bg: #a84b3c;
+  --bs-btn-border-color: #5c261e;
+  --bs-btn-hover-color: #fff8ea;
+  --bs-btn-hover-bg: #8f3d31;
+  --bs-btn-hover-border-color: #5c261e;
+}
+
+.btn-outline-cream {
+  --bs-btn-color: #fff8ea;
+  --bs-btn-border-color: #fff8ea;
+  --bs-btn-hover-bg: #fff8ea;
+  --bs-btn-hover-color: #214833;
+  --bs-btn-hover-border-color: #fff8ea;
+}
+
+.btn-outline-dark {
+  --bs-btn-color: #2b2118;
+  --bs-btn-border-color: #2b2118;
+  --bs-btn-hover-bg: #2b2118;
+  --bs-btn-hover-color: #fff8ea;
+}
+
+.form-control,
+.form-select {
+  border: 3px solid var(--ink);
+  border-radius: 0;
+  background: #fffaf0;
+  box-shadow: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--leaf);
+  box-shadow: 3px 3px 0 rgba(62, 122, 69, 0.35);
+}
+
+.cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: #d7c4a3;
+  border: 3px solid var(--ink);
+}
+
+.cover-link {
+  display: block;
+}
+
+.cover-empty {
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(#9fd4ea 0 46%, #7dba63 46% 100%);
+  font-family: "Jua", sans-serif;
+}
+
+.cover-video {
+  position: relative;
+}
+
+.play-pill {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 0.1rem 0.45rem;
+  font-family: "Jua", sans-serif;
+}
+
+.entry-title {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.entry-title:hover {
+  color: #6b4423;
+}
+
+.entry-excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.entry-body {
+  white-space: pre-wrap;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.season-spring { background: #7dba63; color: #17301a; }
+.season-summer { background: #2f6b4f; color: #fff8ea; }
+.season-autumn { background: #e07a2f; color: #2b2118; }
+.season-winter { background: #6f8ea3; color: #fff8ea; }
+
+.existing-file img,
+.existing-file video {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 3px solid var(--ink);
+}
+
+.existing-file.is-removed img,
+.existing-file.is-removed video {
+  opacity: 0.35;
+}
+
+.admin-side .nav-link {
+  color: var(--ink);
+  font-family: "Jua", sans-serif;
+  font-size: 1.15rem;
+  padding-left: 0;
+}
+
+.admin-side .nav-link.active {
+  color: var(--berry);
+}
+
+.stat-panel {
+  min-height: 7rem;
+}
+
+.table-wrap {
+  overflow: auto;
+}
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--ink);
+}
+
+a { color: #1f5c34; }
+
+@media (max-width: 576px) {
+  .valley-panel {
+    border-width: 12px;
+    padding: 0.7rem;
+  }
+  .btn-lg {
+    font-size: 1.05rem;
+  }
+}
